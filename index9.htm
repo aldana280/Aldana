@@ -16,11 +16,24 @@
 titulo.style.color= "blue"
 titulo.style.backgroundColor="#999999"
 
-let crearElemento= document.creatElement("h1")
-crearElemento.innerHTML="nuevo elemento "
-crearElemento.style.color="lihtgreen"
-crearElemento.style.backgroundColor="darkgreen"
 
+let variable = 1 
+function agregarElemento(texto,color,fondo){
+ let crearElemento= document.createElement("h1")
+ crearElemento.innerHTML=texto
+ crearElemento.style.color=color
+ crearElemento.style.backgroundColor=fondo
+ document.body.appendChild(crearElemento)
+}
+agregarElemento("argumentos","blue","888")
+agregarElemento("segundo elemento","red","pink")
+}
+
+function convertir_CMYK_a_RGB(c,m,y,k){
+    let r,g,b
+    r=255*(1-c)*(1-k)
+    g
+    b
+}
 </script> 
-
 </html>
