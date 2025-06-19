@@ -1,0 +1,50 @@
+// ...existing code...
+function agregarElementoNuevo(texto) {
+    const nuevoElemento = document.createElement("p");
+    nuevoElemento.textContent = texto;
+    document.body.appendChild(nuevoElemento);
+}
+// ...existing code...<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Nuevo Archivo HTML</title>
+</head>
+<body>
+    <h1 id="titulo">Hola, este es un nuevo archivo HTML</h1>
+    <button id="botonCambiarColor">Cambiar Color</button>
+    <script>
+        function agregarElemento(texto, color, fondo) {
+            let crearElemento = document.createElement("h1");
+            crearElemento.innerHTML = texto;
+            crearElemento.style.color = color;
+            crearElemento.style.backgroundColor = fondo;
+            document.body.appendChild(crearElemento);
+            return crearElemento;
+        }
+
+        function cambiarColor() {
+            agregarElemento("click", "red", "blue");
+        }
+
+        function convertir_CMYK_a_RGB(c, m, y, k) {
+            let r, g, b;
+            r = 255 * (1 - c) * (1 - k);
+            g = 255 * (1 - m) * (1 - k);
+            b = 255 * (1 - y) * (1 - k);
+            return "rgb(" + Math.round(r) + "," + Math.round(g) + "," + Math.round(b) + ")";
+        }
+
+        document.getElementById("botonCambiarColor").addEventListener("click", cambiarColor);
+    </script>    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Los Piojos</title>
+    </head>
+    <body>
+        <h1 style="color: green;">los piojos</h1>
+    </body>
+    </html>
+</body>
+</html>

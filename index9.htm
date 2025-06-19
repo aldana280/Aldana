@@ -23,17 +23,21 @@ function agregarElemento(texto,color,fondo){
  crearElemento.innerHTML=texto
  crearElemento.style.color=color
  crearElemento.style.backgroundColor=fondo
+ crearElemento.onclick="onclick"
  document.body.appendChild(crearElemento)
+ return crearElemento
 }
-agregarElemento("argumentos","blue","888")
-agregarElemento("segundo elemento","red","pink")
+fuction cambiarColor(){
+agregarElemento("click","red","blue","console.log(1)")
 }
 
 function convertir_CMYK_a_RGB(c,m,y,k){
     let r,g,b
     r=255*(1-c)*(1-k)
-    g
-    b
+    g=255*(1-M)*(1-k)
+    b=255*(1-Y)*(1-K)
+    return "rgb("+r+","+g+","+b+")"
+
 }
 </script> 
 </html>
